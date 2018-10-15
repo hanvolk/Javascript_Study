@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>함수_지역변수_전역변수</title>
+</head>
+<body>
+    <script>
+        var score=100;
+        function func(){
+            var score=77;
+            document.write("함수 안 Score = "+score+"<br>");            
+        }
+
+        func();
+        document.write("함수 밖 Score = " + score + "<br>");
+    </script>    
+</body>
+</html>

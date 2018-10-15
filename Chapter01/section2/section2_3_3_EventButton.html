@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />   
+    <title>Fruit_EventButton</title>
+    <meta name="description" content="EventButton in Javascript">
+    <script>
+        function changeCaption(cap){
+            document.getElementById("fruit").innerText=cap;
+        }
+    </script>
+</head>
+<body>
+    <h1 id="fruit">과일</h1>
+    <form>
+        <input type="button" value="Apple" onclick="changeCaption('Apple')">
+        <input type="button" value="Orange" onclick="changeCaption('Orange')">
+    </form>    
+</body>
+</html>

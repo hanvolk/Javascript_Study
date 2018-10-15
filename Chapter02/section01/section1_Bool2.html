@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Bool</title>
+    <script>
+        function testFunc(val)
+        {
+            if(val%2==1){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var num=prompt("숫자를 입력 하세요");
+        if(testFunc(num)){
+            alert("홀수 입니다.");
+        }else{
+            alert("짝수 입니다.");
+        }
+        
+        var score = prompt("점수를 입력 하세요");
+        if(score>=70){
+            alert("합격을 축하 합니다.");
+            document.write("자격증 신청은......");
+        }else{
+            alert("합격자 명단에 없습니다.");
+            document.write("다음 시험 일정은 ......");
+        }
+
+
+    </script>
+</body>
+
+</html>

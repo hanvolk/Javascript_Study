@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />    
+    <title>지역변수 와 전역변수</title>
+</head>
+<body>
+    <script>
+        var global="전역변수";
+        function func(){
+            var local="지역변수";
+            document.write("Local in Fucntion : "+local+"<br>");
+            document.write("global in Fucntion : " + global + "<br>");
+        }
+
+        func();
+        document.write("Local : " + local + "<br>");
+        document.write("global : " + global + "<br>");
+
+
+    </script>    
+</body>
+</html>
