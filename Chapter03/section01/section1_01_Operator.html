@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>operator</title>
+    <script>
+        function MyFunc(i,j)
+        {            
+            return i+j;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var x,y,k;
+        x=5;
+        y=7+3;
+        k=MyFunc(x,y);
+
+        document.write(x+'<br>'+y+'<br>');
+        document.write(k + '<br>');
+
+        x=0;y=2;
+        x=x+y;
+        document.write(x + '<br>');
+        x += y;
+        document.write(x + '<br>');
+        x += y;
+        document.write(x + '<br>');
+
+        x -= y;
+        document.write(x + '<br>');
+        x -= y;
+        document.write(x + '<br>');
+        x -= y;
+        document.write(x + '<br>');
+
+        x=1;
+        x%=y;
+        document.write(x + '<br>');
+        
+        x = 2;
+        x %= y;
+        document.write(x + '<br>');
+
+    </script>
+</body>
+
+</html>
