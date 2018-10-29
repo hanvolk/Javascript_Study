@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">    
+    <title>Typeof()</title>   
+</head>
+<body>
+    <script>
+        document.write(typeof(123)+'<br>');
+        document.write(typeof ('123') + '<br>');
+        document.write(typeof ('ABC') + '<br>');
+        document.write(typeof ("대한민국") + '<br>');
+        document.write(typeof ({}) + '<br>');
+        document.write(typeof (()=>{}) + '<br>');
+        document.write(typeof (val) + '<br>');
+        document.write(typeof (false) + '<br>');
+        document.write(typeof (true) + '<br>');
+        document.write(typeof (5>3) + '<br>');
+        document.write(typeof (5<3) + '<br>');
+
+        var data="ABC";
+
+        if(typeof(data)=="string")
+            document.write("문자열 입니다. <br>");
+        if(typeof(data)=="string")
+            document.write("숫자 입니다. <br>");
+        
+        var data1=123;
+        if (typeof (data1) == "string")
+            document.write("문자열 입니다. <br>");
+        if (typeof (data1) == "string")
+            document.write("숫자 입니다. <br>");
+        
+
+    </script>
+</body>
+</html>

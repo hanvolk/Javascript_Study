@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>삼항연산자</title>
+</head>
+<body>
+    <script>
+        var a=prompt("a에 저장할 숫자를 입력 하세요");
+        var b=(a%2==0)? "짝수":"홀수";
+        document.write("a는"+b+"이다.<br>");
+
+        var Osum=Esum=0;
+        for(var i=0;i<=10;i++)
+        {
+            (i%2)==0?Esum+=i:Osum+=i;
+        }
+        document.write("Osum = "+Osum+'<br>');
+        document.write("Esum = " + Esum + '<br>');
+    </script>
+</body>
+
+</html>

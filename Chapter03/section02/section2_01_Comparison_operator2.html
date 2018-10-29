@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>문자열에 대한 비교 연산자</title>
+</head>
+
+<body>
+    <script>
+        document.write('"korea">"america" : '+("korea">"america")+'<br>');
+        // true : 사전 편찬 순서가 a......k   즉 a < k
+        document.write('"Korea">"america" : ' + ("Korea" > "america") + '<br>');
+        // false : 문자의 code 값이 소문자 > 대문자
+        document.write('"한글" > "English" : '+("한글">"English")+'<br>');
+        // true : 한글의 code 값이 영문의 code 값 보다 크다.
+        
+        document.write('"15" > "12" : ' + ("15" > "12") + '<br>');
+        document.write('"015" > "12" : ' + ("015" > "12") + '<br>');
+        document.write('"9" > "12" : ' + ("9" > "12") + '<br>');
+
+        document.write('Number("9") > Number("12") : '+(Number("9") > Number("12"))+'<br>');
+
+    </script>
+</body>
+
+</html>

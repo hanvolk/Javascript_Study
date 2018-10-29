@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>BitOperation_AND_OR_XOR</title>    
+</head>
+
+<body>
+    <script>
+        var i = 10, j = 5;
+        var and = (i & j);
+        var or = (i | j);
+        document.write("AND = " + and + "<br>");
+        document.write("OR = " + or + "<br>");
+
+        var a = 10;                 // 0000 1010 
+        var num1 = a ^ 0xffffffff;  // 1111 1111
+        document.write("10 ^ 0xffffffff = " + num1 + "<br>");
+        document.write("~10 = " + (~a) + "<br>");
+        document.write("-11 ^ 0xffffffff = " + (num1 ^ 0xffffffff) + "<br>");
+        document.write("~(-11) = " + ~(~a) + "<br>");
+    </script>
+</body>
+
+</html>
