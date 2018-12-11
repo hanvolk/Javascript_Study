@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>예외처리2</title>
+    <script>
+        function testfunc(a,b)
+        {
+            // isNaN : 숫자가 아니면 true, 숫자이면 false를 반환
+            if(isNaN(a) || isNaN(b)){
+                throw "숫자가 아닙니다.";
+                return;
+            }else{
+                return a+b;
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var kuk = 90;
+        var eng = "ABC";
+
+        try {
+            var result=testfunc(kuk,eng);
+        } catch (e) {
+            alert("오류가 발생 했습니다.");
+            alert(e.name+"\n"+e);
+        } finally {
+            document.write("합계는 "+result+"점 입니다.<br>");
+            document.write("실행을 완료 했습니다.");
+        }
+        
+
+    </script>
+</body>
+
+</html>

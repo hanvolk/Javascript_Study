@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <title>ForInLoop</title>
+</head>
+<body>
+    <script>
+        var Arr = [88, 78, 96, 54, 23];
+        for(var idx=0;idx<5;idx++)
+        {
+            document.write(`${idx}번째 학생의 성적 ${Arr[idx]} <br>`);            
+        }
+        
+        // for in 은 배열의 Index를 반환
+        for (var idx in Arr) {
+            document.write(`${idx}번째 학생의 성적 ${Arr[idx]} <br>`); //배열 요소로 출력
+        }
+
+        // for of 는 배열의 요소(값)를 반환
+        for(var idx of Arr)
+        {
+            document.write(`${idx} <br>`); // idx 값 자체를 출력
+        }
+
+
+    </script>
+</body>
+</html>

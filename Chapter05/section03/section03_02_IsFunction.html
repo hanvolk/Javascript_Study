@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>값의 상태를 점검</title>
+</head>
+<body>
+    <script>
+        var num=20;        
+
+        if(isNaN(num)){
+            document.write("올바른 숫자가 아닙니다.<br>");
+        }else{
+            document.write("num = "+num+'<br>');
+        }
+
+        num=20/0;
+        if(!isFinite(num))
+        {
+            document.write("무한대의 숫자 입니다.");
+        }
+    </script>    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>논리연산자</title>
+</head>
+<body>
+    <script>
+        var age = prompt("나이를 입력 하세요");
+
+        if (age < 0 || age > 100)
+            alert("나이는 0세 이상 100 미만의 숫자를 입력 하세요");
+        else if (age >= 0 && age < 19)
+            alert("당신의 나이는 " + age + "세, 미성년자 입니다.");
+        else if (age >= 20 && age < 30)
+            alert("당신의 나이는 " + age + "세, 무한한 가능 성을 지닌 그대.");
+        else if (age >= 30 && age < 40)
+            alert("당신의 나이는 " + age + "세, 최고가 되기 위해 열심히 .");
+        else if (age >= 40 && age < 60)
+            alert("당신의 나이는 " + age + "세, 당신 분야에선 당신이 최고의 전문가 입니다.  ");
+        else 
+            alert("당신의 나이는 " + age + "세, 인생은 지금부터 시작~  ");
+    </script>
+</body>
+
+</html>

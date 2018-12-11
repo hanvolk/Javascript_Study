@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>Closure2</title>
+</head>
+<body>
+    <script>
+        function outer() {
+           cnt=0;
+           return function(){
+               cnt++;
+               document.write(cnt+'<br>');
+           }
+        }
+
+        var fnc=outer();
+
+        for(var i=0;i<5;i++)
+        {
+            fnc();
+        }
+       
+    </script>
+</body>
+
+</html>

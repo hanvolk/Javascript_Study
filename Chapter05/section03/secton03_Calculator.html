@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>계산기</title>
+    <style>
+        ul{list-style: none;}
+        label.data{width: 50px;float: left;}
+        .in input{width: 250px;}
+    </style>
+    <script>
+        function myfunc(){
+            var num1= Number(document.getElementById("data1").value);
+            var num2= Number(document.getElementById("data2").value);
+
+            if(isNaN(num1) || isNaN(num2))
+            {
+                document.getElementById("result").value="올바른 숫자가 아닙니다.";
+                return;
+            }else{
+                var sw=getRadioValue("cal");
+                var body;
+
+                switch(sw){
+                    case "add":
+                        body="return i+j";
+                        break;
+                    case "sub":
+                        body = "return i-j";
+                        break;
+                    case "mul":
+                        body = "return i*j";
+                        break;
+                    case "div":
+                        body = "return i/j";
+                        break;
+                }
+            }
+
+            var func=new Function("i","j",body);
+            document.getElementById("result").value=func(num1,num2);
+        }
+
+        function getRadioValue(theRadioGroup){
+            var elements=document.getElementsByName(theRadioGroup);
+
+            for(var i=0;i<elements.length;i++)
+            {
+                if(elements[i].checked)
+                {
+                    return elements[i].value;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <ul class="in">
+            <li><label for="data1" class="data">Data1</label><input type="text" id="data1"></li>
+            <li><label for="data2" class="data">Data2</label><input type="text" id="data2"></li>
+            <li><label for="result" class="data">Result</label><input type="text" id="result"></li>
+        </ul>
+        <ul>
+            <li>
+                <label><input type="radio" name="cal" value="add">덧셈</label>
+                <label><input type="radio" name="cal" value="sub">뺄셈</label>
+                <label><input type="radio" name="cal" value="mul">곱셈</label>
+                <label><input type="radio" name="cal" value="div">나눗셈</label>
+            </li>
+        </ul>
+        <input type="button" value="계산" onclick="myfunc()">
+    </form>
+    
+</body>
+</html>

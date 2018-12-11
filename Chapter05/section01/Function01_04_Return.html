@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">   
+    <title>리턴값</title>
+    <script>
+        function sum(n1, n2){
+            if(typeof(n1)!="number" || typeof(n2)!="number"){
+                document.write("인수가 잘못되었습니다.<br>");
+                return; // 바로 return 해서 Error check를 하고 있다. 
+            }else{
+                return n1+n2;
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var i,j,result;
+        i=10; j=20;
+        result=sum(i,j);
+
+        if(result!=undefined)
+            document.write(result+'<br>');
+        
+        i="korea";
+        result = sum(i, j);
+
+        if (result != undefined)
+            document.write(result + '<br>');
+    </script>
+</body>
+</html>

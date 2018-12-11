@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">   
+    <title>동적함수</title>
+</head>
+<body>
+    <script>
+        var body;
+        if(confirm("덧셈을 원하시면 확인, 곱셈을 원하시면 취소")==true){
+            body="return a+b;";
+        }else{
+            body="return a*b;";
+        }
+
+        var add=new Function("a","b",body);
+        document.write("result : "+add(2,3)+'<br>');
+
+    </script>    
+</body>
+</html>

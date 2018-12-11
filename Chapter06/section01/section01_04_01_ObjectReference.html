@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>객체의 값과 참조 </title>
+</head>
+<body>
+    <script>
+        var man1 = { name: '이민재', age: 29, };
+        var man2 = man1;
+
+        document.write("man1.name = " + man1.name + '<br>');
+        document.write("man2.name = " + man2.name + '<br>');
+
+        man2.name = '홍길동';
+        document.write("man1.name = " + man1.name + '<br>');
+        document.write("man2.name = " + man2.name + '<br>');
+
+    </script>
+</body>
+
+</html>

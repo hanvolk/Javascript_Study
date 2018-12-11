@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>setInterval</title>
+</head>
+<body>
+    <script>
+        var id=setInterval(test,1000);
+        function test(){
+            document.write(new Date()+'<br>');
+        }
+        setTimeout(() => {clearInterval(id);            
+        }, 10000);
+    </script>    
+</body>
+</html>

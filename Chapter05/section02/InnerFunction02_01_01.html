@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>내부함수2</title>
+</head>
+
+<body>
+    <script>
+        function outer(){
+            var outvalue=5678;
+
+            function inner(){
+                var invalue=1234;
+                document.write("outervalue="+outvalue+'<br>');
+                document.write("innervalue="+invalue+'<br>');            
+            }
+            // document.write("innervalue=" + invalue + '<br>');
+            inner();
+            
+        }
+        outer();
+    </script>
+</body>
+
+</html>

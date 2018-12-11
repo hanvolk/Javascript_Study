@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>콜백함수를 통한 처리방식의 위임</title>
+    <script>
+        function sortNumber(a,b){
+            return a-b;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var number=[10,20,9,8,7,6,2,3,1];
+        document.write(number.sort(sortNumber));
+        /*
+          sort : 배열 객체에 기본적으로 내장되어 있는 내장 Method
+
+          함수 sort의 매개변수로 sortNumber 함수를 전달 하고 있다.
+          이때, sortNumber 함수가 콜백 함수이다. 
+        */
+    </script>
+</body>
+</html>

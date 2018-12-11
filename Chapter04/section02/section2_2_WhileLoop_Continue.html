@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>While_Continue_Loop</title>
+</head>
+<body>
+    <script>
+        var i=0;
+        while(i<100)
+        {
+            i++;
+            if ((i % 10) == 0)
+                document.write('<br>');
+            if ((i % 2) == 0)
+                continue;            
+            
+            if (String(i).length == 1)
+                document.write(" 0" + i);
+            else
+                document.write(" " + i);
+        
+        }        
+    </script>
+</body>
+
+</html>

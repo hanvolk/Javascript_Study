@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>함수의 매개변수로 객체를 전달 </title>
+</head>
+<body>
+    <script>
+        function SetName(ob){
+            ob.name='홍길동';
+        }
+
+        var man1={name:'이민재', age:29,};
+        document.write(man1.name+"<br>");
+
+        SetName(man1);
+        document.write(man1.name + "<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>Default Parameter</title>
+    <script>
+        function sum(n){
+            if(n==undefined){
+                n=100;
+            }
+            var s=0;
+            for(var i=0;i<=n;i++){
+                s+=i;
+            }
+            return s;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        document.write("1 ~ 10 = " +sum(10)+ '<br>');
+        document.write("1 ~ 100 = " + sum() + '<br>');
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>콜백함수를 이용한 비동기식 실행</title>
+</head>
+<body>
+    <form>
+        <input type="button" value="취소하기" onclick="cancle()">
+    </form>
+    <div id="message"> </div>
+    <script>
+
+        var setTime_id=setTimeout(function(){window.location.href="http://www.naver.com"},5000);
+
+        var setInterval_id=timer();
+
+        function cancle(){
+            clearTimeout(setTime_id);
+            clearInterval(setInterval_id);
+        }
+        
+        function timer(){
+            var sec=5;
+            return setInterval(function () {
+                sec--;
+                document.getElementById("message").innerText = sec+"초 뒤에 Naver로 이동 합니다.";
+            }, 1000);
+        }
+        
+    </script>    
+</body>
+</html>

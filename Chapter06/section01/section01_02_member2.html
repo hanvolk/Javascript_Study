@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>객체 맴버의 참조</title>
+</head>
+<body>
+    <script>
+        var student = {
+            name : "이민재",
+            sub1:98, sub2:90, sub3:80,
+        }
+        document.write("성  명 : "+student.name+'<br>');
+        for(var i=1;i<4;i++)
+        {
+            document.write("sub"+i+"="+student["sub"+i]+'<br>');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Closure3</title>
+</head>
+<body>
+    <script>
+        function outcount(){
+            var cnt=0;
+            setInterval(function(){
+                cnt++;
+                document.write(cnt+'초가 지났습니다.<br>');
+            },1000);
+        }
+
+       outcount();
+       
+    </script>    
+</body>
+</html>

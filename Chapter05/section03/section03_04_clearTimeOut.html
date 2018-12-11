@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>clearTimeOut</title>
+</head>
+<body>
+    <script>
+        var id = setTimeout(test, 3000)
+        if(!confirm("메시지를 확인 하시겠습니까?")){
+           clearTimeout(id);
+        }
+    </script>    
+</body>
+</html>

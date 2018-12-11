@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">    
+    <title>인수의 전달 방식</title>
+    <script>
+        function Byvalue(num){
+            num=20;
+            document.write("In Function : "+num+'<br>');
+        }
+        function ByRef(num){
+            num[1]=20;
+            document.write("In Function(num[1]) : "+num[1]+'<br>');
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var num=7;
+        document.write("Befor Function(num) : "+num+'<br>');
+        Byvalue(num);
+        document.write("After Function(num)"+num+'<br>');
+
+        var arr=[1,2,3];
+        document.write("Befor Function(arr[1]) : "+arr[1]+'<br>');
+        Byvalue(arr[1]);
+        document.write("After Function(arr[1]) : "+arr[1]+'<br>');
+
+        ByRef(arr);
+        document.write("After Function(arr[1]) : "+arr[1]+'<br>');
+    </script>
+</body>
+</html>

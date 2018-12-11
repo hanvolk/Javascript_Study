@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Function_03</title>
+    <style>
+        form input{width: 50px;}
+    </style>
+    <script>
+        function myfunc() {
+            var num1 = Number(document.getElementById("data1").value);
+            var num2 = Number(document.getElementById("data2").value);
+            document.getElementById("result").value = num1 + num2;
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <ul class="in">
+            <input type="text" id="data1">
+            <input type="text" id="data2">
+            <input type="text" id="result">
+        </ul>
+        <ul>
+            <input type="button" value="계산" onclick="myfunc()">
+        </ul>
+
+    </form>
+</body>
+
+</html>

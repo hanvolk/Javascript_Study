@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>맴버참조_with</title>
+</head>
+<body>
+    <script>
+        var man1={
+            name:'이민재', age:29,
+        }
+
+      //  with(man1){
+      //      document.write("이름 : "+name+'<br>');
+      //      document.write("나이 : "+age+'<br>');
+      //  }
+      
+        var m=man1;
+        document.write("이름 : " + m.name + '<br>');
+        document.write("이름 : " + m.age + '<br>');
+    </script>    
+</body>
+</html>

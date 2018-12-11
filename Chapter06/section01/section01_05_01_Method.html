@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>Method(메서드)</title>
+</head>
+<body>
+    <script>
+        var human={
+            name:'이민재', age:29,
+            address:{city:'서울시', gu:'금천구', dong:'독산동'},
+            ShowMemInfo:function(){
+                document.write('성명 : '+this.name+'<br>');
+                document.write('나이 : '+this.age+'<br>');
+                document.write('주소'+this.address.city+" "+ this.address.gu+" "+ this.address.dong+'<br>');        
+            }
+        }
+
+        document.write('성 명 : '+human.name+'<br>');
+        document.write('나 이 : ' + human.age + '<br>');
+        document.write("주소 : "+human.address.city+' '+human.address.gu+' '+human.address.dong+"<br>");
+
+        human.ShowMemInfo();
+    </script>
+</body>
+</html>

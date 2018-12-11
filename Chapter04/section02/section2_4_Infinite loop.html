@@ -1,0 +1,22 @@
+<!-- 1 ~ 100 까지의 자연수 중에서 홀수만 출력 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">   
+    <title>무한루프</title>
+</head>
+<body>
+    <script>
+        var i=0;
+        while(true) // 무한루프
+        {
+            i++;
+            if((i%2)==0) // 짝수 이면 조건문으로 ..
+                continue;
+            if(i > 100) // 100을 넘기면 반복문 종료
+                break;
+            document.write(" "+i);
+        }
+    </script>    
+</body>
+</html>

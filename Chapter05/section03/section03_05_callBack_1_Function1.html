@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>CallBackFunction</title>
+</head>
+<body>
+    <script>
+        function cal(func,num){
+            return func(num);
+        }
+
+        function increas(num){
+            return num+1;
+        }
+
+        function decreas(num){
+            return num-1;
+        }
+
+        document.write(cal(increas,1)+'<br>');
+        document.write(cal(decreas, 1) + '<br>');
+        
+    </script>    
+</body>
+</html>
